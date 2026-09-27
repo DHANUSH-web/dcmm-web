@@ -1,0 +1,33 @@
+{
+  "web": {
+    "name": "DeepCleanMyMac",
+    "repo_name": "dcmm-website",
+    "repo_url": "https://github.com/DHANUSH-web/dcmm-website.git",
+    "wesite": "https://dcmm.dhanushhv.com",
+    "framework": "Next.js",
+    "framework_website": "https://nextjs.org",
+    "lang": "TypeScript",
+    "lang_website": "https://www.typescriptlang.org"
+  },
+  "app": {
+    "name": "DeepCleanMyMac",
+    "repo_name": "DeepCleanMyMac",
+    "repo_url": "https://github.com/DHANUSH-web/DeepCleanMyMac.git",
+    "website": "https://dcmm.dhanushhv.com"
+  },
+  "engine": {
+    "name": "dcmmlib",
+    "repo_name": "dcmmlib",
+    "repo_url": "https://github.com/DHANUSH-web/dcmmlib.git",
+    "website": "https://dcmm.dhanushhv.com"
+  },
+  "developer": {
+    "name": "Dhanush H V",
+    "website": "https://dhanushhv.com",
+    "buymecoffee": "https://buymeacoffee.com/dhanushhv"
+  },
+  "deployer": {
+    "name": "Vercel",
+    "website": "https://vercel.com/home"
+  }
+}
