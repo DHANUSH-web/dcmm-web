@@ -21,7 +21,7 @@ export default function Home() {
           <span className="dark:bg-green-950 bg-green-50 text-green-500 text-sm px-2 py-1 rounded-full">
             &lt; 3MB
           </span>
-          , crazy fast and bla bla bla 🙄!! Its JUST FIRE, ITS C++ B**CH, RAW
+          , crazy fast!! ITS C++, BARE METAL RAW
           NATIVE PERFORMANCE
         </p>
         <div className="flex items-center space-x-2 mt-6">
