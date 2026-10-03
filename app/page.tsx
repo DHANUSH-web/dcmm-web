@@ -4,14 +4,11 @@ import { GitBranch as GitHubIcon, Download, Coffee } from "lucide-react";
 import AudioButton from "@/components/audio-button";
 import { Button } from "@/components/ui/button";
 import { developer } from "@/dcmm.json";
-import { useTheme } from "next-themes";
 import { app } from "@/dcmm.json";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const { theme } = useTheme();
-
   return (
     <main className="flex flex-col min-h-screen w-full">
       <div className="flex flex-col gap-3 items-center justify-center w-full mt-50">
@@ -54,11 +51,19 @@ export default function Home() {
       </div>
       <div className="flex justify-center w-full overflow-hidden">
         <Image
-          src={!theme ? "/dcmm-desktop-light.png" : `/dcmm-desktop-${theme}.png`}
+          src="/dcmm-desktop-light.png"
           width={2000}
           height={2000}
           alt="DeepCleanMyMac desktop screenshot"
-          className="w-6xl"
+          className="block w-6xl dark:hidden"
+          loading="lazy"
+        />
+        <Image
+          src="/dcmm-desktop-dark.png"
+          width={2000}
+          height={2000}
+          alt="DeepCleanMyMac desktop screenshot"
+          className="hidden w-6xl dark:block"
           loading="lazy"
         />
       </div>
