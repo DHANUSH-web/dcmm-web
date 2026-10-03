@@ -18,7 +18,7 @@ export default function Home() {
         <p className="mt-5">
           A native, open-source, tiny{" "}
           <span className="dark:bg-green-950 bg-green-50 text-green-500 text-sm px-2 py-1 rounded-full">
-            &lt; 3MB
+            &lt; 2MB
           </span>
           , crazy fast!! ITS C++, BARE METAL RAW
           NATIVE PERFORMANCE
