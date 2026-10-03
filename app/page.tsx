@@ -54,11 +54,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center w-full overflow-hidden">
         <Image
-          src={
-            theme === "light"
-              ? "/dcmm-desktop-light.png"
-              : "/dcmm-desktop-dark.png"
-          }
+          src={!theme ? "/dcmm-desktop-light.png" : `/dcmm-desktop-${theme}.png`}
           width={2000}
           height={2000}
           alt="DeepCleanMyMac desktop screenshot"
