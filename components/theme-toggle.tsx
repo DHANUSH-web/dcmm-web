@@ -7,15 +7,16 @@ import { Button } from "@/components/ui/button";
 import { Moon as MoonIcon, Sun as SunIcon } from "lucide-react";
 
 export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   const handleThemeToggle = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
   }
 
   return (
     <Button size="icon" variant="secondary" onClick={handleThemeToggle}>
-      {theme === "dark" ? <MoonIcon /> : <SunIcon />}
+      <MoonIcon className="hidden dark:block" />
+      <SunIcon className="block dark:hidden" />
     </Button>
   )
 }
