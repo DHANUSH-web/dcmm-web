@@ -63,7 +63,7 @@ export default function Home() {
           height={2000}
           alt="DeepCleanMyMac desktop screenshot"
           className="w-6xl"
-          loading="eager"
+          loading="lazy"
         />
       </div>
     </main>
