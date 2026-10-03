@@ -24,7 +24,7 @@ export default function NavBar() {
   const route = usePathname();
 
   return (
-    <nav className="flex items-center justify-around sticky top-0 left-0 z-50 px-2 w-full bg-zinc-50 dark:bg-zinc-950 h-16 border-b border-b-zinc-100 dark:border-b-zinc-900">
+    <nav className="flex items-center justify-around sticky top-0 left-0 z-50 px-2 w-full h-16 bg-background/80 backdrop-filter:blur-2xl backdrop-blur-lg">
       <Link href="/" className="font-medium">{app.name}</Link>
       <ul className="flex items-center gap-6 text-sm">
         {nav_items.map(item => (
