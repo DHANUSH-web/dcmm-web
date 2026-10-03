@@ -1,8 +1,8 @@
 {
   "web": {
     "name": "DeepCleanMyMac",
-    "repo_name": "dcmm-website",
-    "repo_url": "https://github.com/DHANUSH-web/dcmm-website.git",
+    "repo_name": "dcmm-web",
+    "repo_url": "https://github.com/DHANUSH-web/dcmm-web.git",
     "wesite": "https://dcmm.dhanushhv.com",
     "framework": "Next.js",
     "framework_website": "https://nextjs.org",
