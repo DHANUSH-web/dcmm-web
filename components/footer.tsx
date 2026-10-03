@@ -16,16 +16,16 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="flex flex-col py-5 gap-5 items-center justify-center">
-      <div className="flex items-center gap-5">
-        <Link href={app.repo_url} target="_blank" className="text-neutral-400 hover:text-neutral-950">
+      <div className="flex items-center gap-2">
+        <Link href={app.repo_url} target="_blank" className="text-sm text-zinc-400 dark:text-zinc-500 hover:text-primary dark:hover:text-primary hover:bg-secondary py-1 px-3 rounded-full duration-200">
           {app.repo_name}
         </Link>
         <span>/</span>
-        <Link href={engine.repo_url} target="_blank" className="text-neutral-400 hover:text-neutral-950">
+        <Link href={engine.repo_url} target="_blank" className="text-sm text-zinc-400 dark:text-zinc-500 hover:text-primary dark:hover:text-primary hover:bg-secondary py-1 px-3 rounded-full duration-200">
           {engine.repo_name}
         </Link>
         <span>/</span>
-        <Link href={web.repo_url} target="_blank" className="text-neutral-400 hover:text-neutral-950">
+        <Link href={web.repo_url} target="_blank" className="text-sm text-zinc-400 dark:text-zinc-500 hover:text-primary dark:hover:text-primary hover:bg-secondary py-1 px-3 rounded-full duration-200">
           {web.repo_name}
         </Link>
       </div>
