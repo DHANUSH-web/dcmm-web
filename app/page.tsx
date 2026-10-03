@@ -1,7 +1,6 @@
 "use client";
 
 import { GitBranch as GitHubIcon, Download, Coffee } from "lucide-react";
-import AudioButton from "@/components/audio-button";
 import { Button } from "@/components/ui/button";
 import { developer } from "@/dcmm.json";
 import { app } from "@/dcmm.json";
@@ -37,15 +36,13 @@ export default function Home() {
             </Button>
           </Link>
           <Link href={developer.buymecoffee} target="_blank">
-            <AudioButton
-              className="capitalize bg-yellow-200 text-yellow-700 hover:bg-yellow-300 dark:bg-yellow-950 dark:text-yellow-200 dark:hover:bg-yellow-900 transition-colors duration-300"
-              // onHoverAudio="hover.mp3"
-              onLeaveAudio="leave.mp3"
-              onClickAudio="click.mp3"
+            <Button
+              variant="secondary"
+              className="capitalize"
             >
               <Coffee className="w-5 h-5 fill-current" />
               buy me a coffee
-            </AudioButton>
+            </Button>
           </Link>
         </div>
       </div>
