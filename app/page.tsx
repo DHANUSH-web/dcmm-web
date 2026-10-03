@@ -49,22 +49,31 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex justify-center w-full">
+      <div className="relative flex justify-center w-full h-160 mt-5 mb-50 overflow-hidden">
         <Image
           src="/dcmm-desktop-light.png"
           width={2000}
           height={2000}
           alt="DeepCleanMyMac desktop screenshot"
-          className="block w-6xl dark:hidden"
-          loading="lazy"
+          className="block w-6xl h-256 dark:hidden"
+          loading="eager"
         />
         <Image
           src="/dcmm-desktop-dark.png"
           width={2000}
           height={2000}
           alt="DeepCleanMyMac desktop screenshot"
-          className="hidden w-6xl dark:block"
-          loading="lazy"
+          className="hidden w-6xl h-256 dark:block"
+          loading="eager"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-linear-to-b from-transparent to-background"
+          style={{
+            backdropFilter: "blur(2px)",
+            maskImage: "linear-gradient(to bottom, transparent 0%, black 100%)",
+            WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 100%)",
+          }}
         />
       </div>
     </main>
