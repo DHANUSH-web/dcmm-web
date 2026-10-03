@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen w-full">
-      <div className="flex flex-col gap-3 items-center justify-center w-full mt-50">
+      <div className="flex flex-col gap-3 items-center justify-center w-full mt-5">
         <p className="text-9xl font-bold bg-linear-to-r bg-clip-text text-transparent dark:from-secondary dark:via-zinc-100 dark:to-secondary from-zinc-300 via-zinc-950 to-zinc-300">
           {app.name}
         </p>
@@ -49,7 +49,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex justify-center w-full overflow-hidden">
+      <div className="flex justify-center w-full">
         <Image
           src="/dcmm-desktop-light.png"
           width={2000}
