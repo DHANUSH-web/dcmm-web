@@ -1,9 +1,11 @@
 "use client";
 
 import { GitBranch as GitHubIcon, Download, Coffee } from "lucide-react";
+import AudioButton from "@/components/audio-button";
 import { Button } from "@/components/ui/button";
+import { developer } from "@/dcmm.json";
 import { useTheme } from "next-themes";
-import { app, developer } from "@/dcmm.json";
+import { app } from "@/dcmm.json";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,7 +23,7 @@ export default function Home() {
           <span className="dark:bg-green-950 bg-green-50 text-green-500 text-sm px-2 py-1 rounded-full">
             &lt; 3MB
           </span>
-          , crazy fast and bla bla bla 🙄!! Its JUST FIRE, ITS C++ B**CH, RAW
+          , crazy fast!! ITS C++, BARE METAL RAW
           NATIVE PERFORMANCE
         </p>
         <div className="flex items-center space-x-2 mt-6">
@@ -38,10 +40,15 @@ export default function Home() {
             </Button>
           </Link>
           <Link href={developer.buymecoffee} target="_blank">
-            <Button className="bg-yellow-200 text-yellow-900 hover:bg-yellow-300 dark:bg-yellow-950 dark:text-yellow-500 opacity-80 dark:hover:bg-yellow-950 hover:opacity-100">
+            <AudioButton
+              className="capitalize bg-yellow-200 text-yellow-700 hover:bg-yellow-300 dark:bg-yellow-950 dark:text-yellow-200 dark:hover:bg-yellow-900 transition-colors duration-300"
+              // onHoverAudio="hover.mp3"
+              onLeaveAudio="leave.mp3"
+              onClickAudio="click.mp3"
+            >
               <Coffee className="w-5 h-5 fill-current" />
-              Dab Me Up Fam
-            </Button>
+              buy me a coffee
+            </AudioButton>
           </Link>
         </div>
       </div>
