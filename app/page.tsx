@@ -55,7 +55,7 @@ export default function Home() {
           width={2000}
           height={2000}
           alt="DeepCleanMyMac desktop screenshot"
-          className="block w-6xl h-256 dark:hidden"
+          className="block w-270 h-256 dark:hidden"
           loading="eager"
         />
         <Image
@@ -63,7 +63,7 @@ export default function Home() {
           width={2000}
           height={2000}
           alt="DeepCleanMyMac desktop screenshot"
-          className="hidden w-6xl h-256 dark:block"
+          className="hidden w-270 h-256 dark:block"
           loading="eager"
         />
         <div
