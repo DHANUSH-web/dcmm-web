@@ -1,7 +1,6 @@
 "use client";
 
 import TechText from "@/components/TechText";
-import "@/components/TechText.css";
 
 import { useTheme } from "next-themes";
 
