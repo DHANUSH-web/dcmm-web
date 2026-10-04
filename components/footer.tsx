@@ -32,19 +32,19 @@ export default function Footer() {
       <div className="flex items-center gap-1">
         <span>Developed by</span>
         <Link href="/about">
-          <Badge className="text-sm">
+          <Badge variant="secondary" className="text-sm">
             { developer.name }
           </Badge>
         </Link>
         <span>with</span>
         <Link href={web.framework_website} target="_blank">
-          <Badge variant="outline" className="text-sm">
+          <Badge variant="secondary" className="text-sm">
             {web.framework}
           </Badge>
         </Link>
         <span>and</span>
         <Link href={web.lang_website} target="_blank">
-          <Badge variant="outline" className="text-sm">
+          <Badge variant="secondary" className="text-sm">
             {web.lang}
           </Badge>
         </Link>
@@ -52,7 +52,7 @@ export default function Footer() {
       <div className="flex items-center gap-1">
         <span>Deployed on</span>
         <Link href={deployer.website} target="_blank">
-          <Badge className="text-sm">
+          <Badge variant="secondary" className="text-sm">
             {deployer.name}
           </Badge>
         </Link>
