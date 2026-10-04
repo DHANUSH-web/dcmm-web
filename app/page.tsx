@@ -2,6 +2,7 @@
 
 import { GitBranch as GitHubIcon, Download, Coffee } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import CurvedLoop from "@/components/CurvedLoop";
 import MainLogo from "@/components/main-logo";
 import { developer } from "@/dcmm.json";
 import { app } from "@/dcmm.json";
@@ -13,15 +14,7 @@ export default function Home() {
     <main className="flex flex-col min-h-screen w-full">
       <div className="flex flex-col gap-3 items-center justify-center w-full mt-5">
         <MainLogo />
-        <p className="mt-5">
-          A native, open-source, tiny{" "}
-          <span className="dark:bg-green-950 bg-green-50 text-green-500 text-sm px-2 py-1 rounded-full">
-            &lt; 2MB
-          </span>
-          , crazy fast!! ITS C++, BARE METAL RAW
-          NATIVE PERFORMANCE
-        </p>
-        <div className="flex items-center space-x-2 mt-6">
+        <div className="flex items-center space-x-2 -mt-6">
           <Link href="/">
             <Button>
               <Download width={16} height={16} />
@@ -43,6 +36,15 @@ export default function Home() {
               buy me a coffee
             </Button>
           </Link>
+        </div>
+        <div className="absolute w-full -z-50 opacity-20 blur-sm">
+          <CurvedLoop
+            marqueeText="Fully Native * Blazing Fast * Open-Source * Less than 2MB * "
+            speed={1}
+            curveAmount={500}
+            direction="left"
+            interactive
+          />
         </div>
       </div>
       <div className="relative flex justify-center w-full h-160 mt-5 mb-50 overflow-hidden">
