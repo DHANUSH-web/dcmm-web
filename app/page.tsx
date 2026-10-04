@@ -2,6 +2,7 @@
 
 import { GitBranch as GitHubIcon, Download, Coffee } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import MainLogo from "@/components/main-logo";
 import { developer } from "@/dcmm.json";
 import { app } from "@/dcmm.json";
 import Image from "next/image";
@@ -11,9 +12,7 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen w-full">
       <div className="flex flex-col gap-3 items-center justify-center w-full mt-5">
-        <p className="text-9xl font-bold bg-linear-to-r bg-clip-text text-transparent dark:from-secondary dark:via-zinc-100 dark:to-secondary from-zinc-300 via-zinc-950 to-zinc-300">
-          {app.name}
-        </p>
+        <MainLogo />
         <p className="mt-5">
           A native, open-source, tiny{" "}
           <span className="dark:bg-green-950 bg-green-50 text-green-500 text-sm px-2 py-1 rounded-full">
