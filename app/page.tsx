@@ -14,7 +14,7 @@ export default function Home() {
     <main className="flex flex-col min-h-screen w-full">
       <div className="flex flex-col gap-3 items-center justify-center w-full mt-5">
         <MainLogo />
-        <div className="flex items-center space-x-2 -mt-6">
+        <div className="flex items-center space-x-2 -mt-6 z-5">
           <Link href="/">
             <Button>
               <Download width={16} height={16} />
