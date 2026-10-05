@@ -14,7 +14,15 @@ export default function Home() {
     <main className="flex flex-col min-h-screen w-full">
       <div className="flex flex-col gap-3 items-center justify-center w-full mt-5">
         <MainLogo />
-        <div className="flex items-center space-x-2 -mt-6 z-5">
+        <p className="z-5 -mt-6 mb-2 text-zinc-400 max-w-3xl text-center">
+          A personal, free, blazing fast, fully native and very light
+          <span className="bg-green-950 text-green-500 text-sm px-2 py-1 ml-1 rounded-full">
+            &lt; 2MB
+          </span>
+          , advanced Mac SSD cleaner, because your SSD is not immortal and
+          definitely too expensive to upgrade
+        </p>
+        <div className="flex items-center space-x-2 z-5">
           <Link href="/">
             <Button>
               <Download width={16} height={16} />
