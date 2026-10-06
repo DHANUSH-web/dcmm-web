@@ -2,7 +2,7 @@
   "web": {
     "name": "DeepCleanMyMac",
     "repo_name": "dcmm-web",
-    "repo_url": "https://github.com/DHANUSH-web/dcmm-web.git",
+    "repo_url": "https://github.com/DHANUSH-web/dcmm-web",
     "wesite": "https://dcmm.dhanushhv.com",
     "framework": "Next.js",
     "framework_website": "https://nextjs.org",
@@ -12,13 +12,13 @@
   "app": {
     "name": "DeepCleanMyMac",
     "repo_name": "DeepCleanMyMac",
-    "repo_url": "https://github.com/DHANUSH-web/DeepCleanMyMac.git",
+    "repo_url": "https://github.com/DHANUSH-web/DeepCleanMyMac",
     "website": "https://dcmm.dhanushhv.com"
   },
   "engine": {
     "name": "dcmmlib",
     "repo_name": "dcmmlib",
-    "repo_url": "https://github.com/DHANUSH-web/dcmmlib.git",
+    "repo_url": "https://github.com/DHANUSH-web/dcmmlib",
     "website": "https://dcmm.dhanushhv.com"
   },
   "developer": {
