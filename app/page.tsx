@@ -16,7 +16,7 @@ export default function Home() {
         <MainLogo />
         <p className="z-5 -mt-6 mb-2 text-zinc-400 max-w-3xl text-center">
           A personal, free, blazing fast, fully native and very light
-          <span className="bg-green-950 text-green-500 text-sm px-2 py-1 ml-1 rounded-full">
+          <span className="bg-green-100 dark:bg-green-950 text-green-500 text-sm px-2 py-1 ml-1 rounded-full">
             &lt; 2MB
           </span>
           , advanced Mac SSD cleaner, because your SSD is not immortal and
