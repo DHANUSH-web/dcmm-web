@@ -57,7 +57,7 @@ export default function Home() {
       </div>
       <div className="relative flex justify-center w-full h-160 mt-5 mb-50 overflow-hidden">
         <Image
-          src="/dcmm-desktop-light.png"
+          src="/mymac-light.png"
           width={2000}
           height={2000}
           alt="DeepCleanMyMac desktop screenshot"
@@ -65,7 +65,7 @@ export default function Home() {
           loading="eager"
         />
         <Image
-          src="/dcmm-desktop-dark.png"
+          src="/mymac-dark.png"
           width={2000}
           height={2000}
           alt="DeepCleanMyMac desktop screenshot"
