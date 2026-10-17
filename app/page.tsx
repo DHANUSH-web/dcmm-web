@@ -6,10 +6,13 @@ import CurvedLoop from "@/components/CurvedLoop";
 import MainLogo from "@/components/main-logo";
 import { developer } from "@/dcmm.json";
 import { app } from "@/dcmm.json";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const { resolvedTheme } = useTheme();
+
   return (
     <main className="flex flex-col min-h-screen w-full">
       <div className="flex flex-col gap-3 items-center justify-center w-full mt-5">
@@ -57,19 +60,11 @@ export default function Home() {
       </div>
       <div className="relative flex justify-center w-full h-160 mt-5 mb-50 overflow-hidden">
         <Image
-          src="/mymac-light.png"
+          src={ resolvedTheme ? `/devcorner-apps-${resolvedTheme}.png` : "/devcorner-apps-light.png" }
           width={2000}
           height={2000}
           alt="DeepCleanMyMac desktop screenshot"
-          className="block w-270 h-256 dark:hidden"
-          loading="eager"
-        />
-        <Image
-          src="/mymac-dark.png"
-          width={2000}
-          height={2000}
-          alt="DeepCleanMyMac desktop screenshot"
-          className="hidden w-270 h-256 dark:block"
+          className="block w-270 h-256"
           loading="eager"
         />
         <div
