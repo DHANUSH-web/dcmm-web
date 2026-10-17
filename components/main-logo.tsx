@@ -16,7 +16,7 @@ export default function MainLogo() {
         style={{}}
         color={ resolvedTheme === "dark" ? "white" : "black" }
         accentColor={ resolvedTheme === "dark" ? "white" : "black" }
-        fontWeight={600}
+        fontWeight={650}
         fontSize={150}
         reveal="letter"
         dashLength={5}
