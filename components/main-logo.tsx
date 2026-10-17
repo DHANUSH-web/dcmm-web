@@ -4,7 +4,7 @@ import TechText from "@/components/TechText";
 
 import { useTheme } from "next-themes";
 
-import { app } from "@/dcmm.json";
+import { app } from "@/opabinia-config.json";
 
 export default function MainLogo() {
   const { resolvedTheme } = useTheme();

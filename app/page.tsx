@@ -4,8 +4,8 @@ import { GitBranch as GitHubIcon, Download, Coffee } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CurvedLoop from "@/components/CurvedLoop";
 import MainLogo from "@/components/main-logo";
-import { developer } from "@/dcmm.json";
-import { app } from "@/dcmm.json";
+import { developer } from "@/opabinia-config.json";
+import { app } from "@/opabinia-config.json";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
@@ -63,7 +63,7 @@ export default function Home() {
           src={ resolvedTheme ? `/devcorner-apps-${resolvedTheme}.png` : "/devcorner-apps-light.png" }
           width={2000}
           height={2000}
-          alt="DeepCleanMyMac desktop screenshot"
+          alt="Opabinia desktop screenshot"
           className="block w-270 h-256"
           loading="eager"
         />

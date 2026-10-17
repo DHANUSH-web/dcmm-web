@@ -3,7 +3,7 @@ import { interSans, geistMono } from "@/components/fonts";
 import ThemeProvider from "@/components/theme-provider";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { developer } from "@/dcmm.json";
+import { developer } from "@/opabinia-config.json";
 import "./globals.css";
 
 // next standard imports

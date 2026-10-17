@@ -1,9 +1,9 @@
 {
   "web": {
-    "name": "DeepCleanMyMac",
-    "repo_name": "dcmm-web",
-    "repo_url": "https://github.com/DHANUSH-web/dcmm-web",
-    "wesite": "https://dcmm.dhanushhv.com",
+    "name": "Opabinia",
+    "repo_name": "opabinia-web",
+    "repo_url": "https://github.com/DHANUSH-web/opabinia-web",
+    "wesite": "https://opa.dhanushhv.com",
     "framework": "Next.js",
     "framework_website": "https://nextjs.org",
     "lang": "TypeScript",
@@ -11,15 +11,15 @@
   },
   "app": {
     "name": "Opabinia",
-    "repo_name": "DeepCleanMyMac",
-    "repo_url": "https://github.com/DHANUSH-web/DeepCleanMyMac",
-    "website": "https://dcmm.dhanushhv.com"
+    "repo_name": "Opabinia",
+    "repo_url": "https://github.com/DHANUSH-web/Opabinia",
+    "website": "https://opa.dhanushhv.com"
   },
   "engine": {
-    "name": "dcmmlib",
-    "repo_name": "dcmmlib",
-    "repo_url": "https://github.com/DHANUSH-web/dcmmlib",
-    "website": "https://dcmm.dhanushhv.com"
+    "name": "opalib",
+    "repo_name": "opalib",
+    "repo_url": "https://github.com/DHANUSH-web/opalib",
+    "website": "https://opa.dhanushhv.com"
   },
   "developer": {
     "name": "Dhanush H V",

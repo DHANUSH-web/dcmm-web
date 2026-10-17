@@ -1,11 +1,11 @@
 export async function getGitHubStats(): Promise<{ stars: number; version: string; }> {
   try {
     const [ repoRes, releaseRes ] = await Promise.all([
-      fetch("https://api.github.com/repos/DHANUSH-web/DeepCleanMyMac", {
+      fetch("https://api.github.com/repos/DHANUSH-web/Opabinia", {
         next: { revalidate: 3600 },
         headers: { Accept: "application/vnd.github.v3+json" },
       }),
-      fetch("https://api.github.com/repos/DHANUSH-web/DeepCleanMyMac/release/latest", {
+      fetch("https://api.github.com/repos/DHANUSH-web/Opabinia/release/latest", {
         next: { revalidate: 3600 },
         headers: { Accept: "application/vnd.github.v3+json" },
       }),

@@ -5,7 +5,7 @@ import {
   app,
   engine,
   web,
-} from "@/dcmm.json";
+} from "@/opabinia-config.json";
 
 // components and types imports
 import { Badge } from "@/components/ui/badge";

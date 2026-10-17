@@ -1,7 +1,7 @@
 "use client";
 
 // custom imports
-import { app, engine } from "@/dcmm.json";
+import { app, engine } from "@/opabinia-config.json";
 import { AppleLogo } from "@/components/icons";
 
 // component imports
