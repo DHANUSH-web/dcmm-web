@@ -1,5 +1,5 @@
 // custom imports
-import { geistSans, geistMono } from "@/components/fonts";
+import { interSans, geistMono } from "@/components/fonts";
 import ThemeProvider from "@/components/theme-provider";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${interSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
