@@ -12,17 +12,17 @@ export default function MainLogo() {
   return (
     <div className="w-full h-56 overflow-hidden">
       <TechText
-        text={ app.name }
+        text={ app.name.toUpperCase() }
         style={{}}
         color={ resolvedTheme === "dark" ? "white" : "black" }
         accentColor={ resolvedTheme === "dark" ? "white" : "black" }
         fontWeight={600}
-        fontSize={100}
+        fontSize={150}
         reveal="letter"
         dashLength={5}
         dashGap={2}
         specks={15}
-        letterSpacing={-0.05}
+        letterSpacing={0.1}
         reach={20}
         softness={0.7}
         strokeWidth={1.5}
