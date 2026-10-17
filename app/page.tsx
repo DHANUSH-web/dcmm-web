@@ -17,7 +17,7 @@ export default function Home() {
     <main className="flex flex-col min-h-screen w-full">
       <div className="flex flex-col gap-3 items-center justify-center w-full mt-5">
         <MainLogo />
-        <p className="z-5 -mt-6 mb-2 text-zinc-400 max-w-3xl text-center">
+        <p className="z-5 -mt-6 mb-2 text-zinc-400 max-w-fit mx-5 text-justify md:max-w-3xl md:text-center">
           A personal, free, blazing fast, fully native and very light
           <span className="bg-green-100 dark:bg-green-950 text-green-500 text-sm px-2 py-1 ml-1 rounded-full">
             &lt; 2MB
@@ -26,7 +26,7 @@ export default function Home() {
           definitely too expensive to upgrade
         </p>
         <div className="flex items-center space-x-2 z-5">
-          <Link href="/">
+          <Link href="/" className="hidden md:block">
             <Button>
               <Download width={16} height={16} />
               Download for Mac
@@ -48,7 +48,7 @@ export default function Home() {
             </Button>
           </Link>
         </div>
-        <div className="absolute w-full -z-50 opacity-20 blur-sm">
+        <div className="absolute w-full -z-50 opacity-20 blur-xs">
           <CurvedLoop
             marqueeText="Fully Native * Blazing Fast * Open-Source * Less than 2MB * "
             speed={1}
@@ -58,13 +58,13 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="relative flex justify-center w-full h-160 mt-5 mb-50 overflow-hidden">
+      <div className="relative flex justify-center w-full h-56 md:h-160 mt-5 mb-50 overflow-hidden">
         <Image
           src={ resolvedTheme ? `/devcorner-apps-${resolvedTheme}.png` : "/devcorner-apps-light.png" }
           width={2000}
           height={2000}
           alt="Opabinia desktop screenshot"
-          className="block w-270 h-256"
+          className="block w-full h-fit md:w-270 md:h-256"
           loading="eager"
         />
         <div

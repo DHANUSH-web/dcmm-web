@@ -29,20 +29,20 @@ export default function Footer() {
           {web.repo_name}
         </Link>
       </div>
-      <div className="flex items-center gap-1">
-        <span>Developed by</span>
+      <div className="flex items-center gap-1 max-w-fit">
+        <span className="text-sm md:text-base">Developed by</span>
         <Link href="/about">
           <Badge variant="secondary" className="text-sm">
             { developer.name }
           </Badge>
         </Link>
-        <span>with</span>
+        <span className="text-sm md:text-base">with</span>
         <Link href={web.framework_website} target="_blank">
           <Badge variant="secondary" className="text-sm">
             {web.framework}
           </Badge>
         </Link>
-        <span>and</span>
+        <span className="text-sm md:text-base">and</span>
         <Link href={web.lang_website} target="_blank">
           <Badge variant="secondary" className="text-sm">
             {web.lang}
@@ -50,7 +50,7 @@ export default function Footer() {
         </Link>
       </div>
       <div className="flex items-center gap-1">
-        <span>Deployed on</span>
+        <span className="text-sm md:text-base">Deployed on</span>
         <Link href={deployer.website} target="_blank">
           <Badge variant="secondary" className="text-sm">
             {deployer.name}
