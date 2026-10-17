@@ -60,7 +60,7 @@ export default function Home() {
       </div>
       <div className="relative flex justify-center w-full h-56 md:h-160 mt-5 mb-50 overflow-hidden">
         <Image
-          src={ resolvedTheme ? `/devcorner-apps-${resolvedTheme}.png` : "/devcorner-apps-light.png" }
+          src={ resolvedTheme ? `/devcorner-apps-${resolvedTheme}.png` : "/devcorner-apps-dark.png" }
           width={2000}
           height={2000}
           alt="Opabinia desktop screenshot"
