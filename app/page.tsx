@@ -55,13 +55,13 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="relative flex justify-center w-full h-56 md:h-160 mt-5 mb-50 overflow-hidden">
+      <div className="relative flex justify-center w-full h-96 md:h-160 mt-5 mb-50 overflow-hidden">
         <Image
           src={ "/devcorner-apps-light.png" }
           width={2000}
           height={2000}
           alt="Opabinia desktop screenshot"
-          className="block w-full h-fit md:w-270 md:h-256 dark:hidden"
+          className="block w-full h-fit md:max-w-270 md:max-h-256 dark:hidden"
           loading="eager"
         />
         <Image
@@ -69,7 +69,7 @@ export default function Home() {
           width={2000}
           height={2000}
           alt="Opabinia desktop screenshot"
-          className="hidden w-full h-fit md:w-270 md:h-256 dark:block"
+          className="hidden w-full h-fit md:max-w-270 md:max-h-256 dark:block"
           loading="eager"
         />
         <div
