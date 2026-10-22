@@ -10,19 +10,19 @@ export default function MainLogo() {
   const { resolvedTheme } = useTheme();
 
   return (
-    <div className="w-full h-56 overflow-hidden">
+    <div className="w-full h-56 md:h-96 overflow-hidden">
       <TechText
-        text={ app.name.toUpperCase() }
+        text={ app.name }
         style={{}}
         color={ resolvedTheme === "dark" ? "white" : "black" }
         accentColor={ resolvedTheme === "dark" ? "white" : "black" }
         fontWeight={650}
-        fontSize={150}
+        fontSize={200}
         reveal="letter"
         dashLength={5}
         dashGap={2}
         specks={15}
-        letterSpacing={0.1}
+        letterSpacing={0}
         reach={20}
         softness={0.7}
         strokeWidth={1.5}
