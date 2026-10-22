@@ -1,11 +1,10 @@
 "use client";
 
 // custom imports
-import { app, engine } from "@/opabinia-config.json";
+import { app } from "@/opabinia-config.json";
 import { AppleLogo } from "@/components/icons";
 
 // component imports
-import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/theme-toggle";
 
 // standard next imports
@@ -14,8 +13,8 @@ import Link from "next/link";
 
 // NavBar items
 const nav_items: ({ label: string; href: string; target?: string; }[]) = [
-  { label: "desktop", href: app.repo_url, target: "_blank" },
-  { label: "engine", href: engine.repo_url, target: "_blank" },
+  { label: "desktop", href: "/desktop" },
+  { label: "engine", href: "/engine" },
   { label: "developer", href: "/developer" },
   { label: "About", href: "/about" },
 ];
@@ -35,10 +34,10 @@ export default function NavBar() {
           </Link>
         )) }
         <li className="hidden md:block">
-          <Button>
+          <Link href="/download" className="flex items-center justify-center px-3 py-2 bg-foreground text-background gap-2 rounded-full">
             <AppleLogo width={16} height={16} className="text-background" />
             Download
-          </Button>
+          </Link>
         </li>
         <li>
           <ThemeToggle />
