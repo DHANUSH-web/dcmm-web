@@ -1,6 +1,7 @@
 // custom imports
 import { interSans, geistMono } from "@/components/fonts";
 import ThemeProvider from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/toast";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { developer } from "@/opabinia-config.json";
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
           <div className="h-16 invisible"></div>
           {children}
           <Footer />
+          <Toaster />
         </ThemeProvider>
         <Analytics />
         <SpeedInsights />
