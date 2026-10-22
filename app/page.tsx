@@ -1,17 +1,13 @@
-"use client";
-
 import { GitBranch as GitHubIcon, Download, Coffee } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CurvedLoop from "@/components/CurvedLoop";
 import MainLogo from "@/components/main-logo";
 import { developer } from "@/opabinia-config.json";
 import { app } from "@/opabinia-config.json";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const { resolvedTheme } = useTheme();
 
   return (
     <main className="flex flex-col min-h-screen w-full">
@@ -26,11 +22,12 @@ export default function Home() {
           definitely too expensive to upgrade
         </p>
         <div className="flex items-center space-x-2 z-5">
-          <Link href="/" className="hidden md:block">
-            <Button>
-              <Download width={16} height={16} />
-              Download for Mac
-            </Button>
+          <Link
+            href="/download"
+            className="hidden md:flex items-center justify-center gap-2 rounded-full bg-foreground text-background text-sm font-medium py-1.5 px-3 hover:opacity-80 transition-opacity duration-200"
+          >
+            <Download width={16} height={16} />
+            Download for Mac
           </Link>
           <Link href={app.repo_url} target="_blank">
             <Button variant="secondary">
@@ -60,11 +57,19 @@ export default function Home() {
       </div>
       <div className="relative flex justify-center w-full h-56 md:h-160 mt-5 mb-50 overflow-hidden">
         <Image
-          src={ resolvedTheme ? `/devcorner-apps-${resolvedTheme}.png` : "/devcorner-apps-dark.png" }
+          src={ "/devcorner-apps-light.png" }
           width={2000}
           height={2000}
           alt="Opabinia desktop screenshot"
-          className="block w-full h-fit md:w-270 md:h-256"
+          className="block w-full h-fit md:w-270 md:h-256 dark:hidden"
+          loading="eager"
+        />
+        <Image
+          src={ "/devcorner-apps-dark.png" }
+          width={2000}
+          height={2000}
+          alt="Opabinia desktop screenshot"
+          className="hidden w-full h-fit md:w-270 md:h-256 dark:block"
           loading="eager"
         />
         <div
